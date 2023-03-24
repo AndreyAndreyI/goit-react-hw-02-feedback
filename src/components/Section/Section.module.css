@@ -1,8 +1,6 @@
-.info {
-  font-size: 20px;
-  font-weight: 500;
+.SecTitle {
   background-color: #000000;
   -webkit-text-fill-color: transparent;
-  color: #ececec;
+  color: #fdfdfd;
   background-clip: text;
 }

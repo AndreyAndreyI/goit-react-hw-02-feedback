@@ -1,15 +1,18 @@
-import PropTypes from 'prop-types';
+import React from 'react';
+import PropTypes from "prop-types";
+import css from '../Section/Section.module.css'
 
-export const Section = ({ title, children }) => {
-  return (
-    <section>
-      <h2>{title}</h2>
-      {children}
-    </section>
-  );
+const Section = ({ title, children }) => {
+    return (
+    <>
+        <h2 className={css.SecTitle}>{title}</h2>
+        {children}
+    </>
+    );
 };
 
 Section.propTypes = {
-  title: PropTypes.string,
-  children: PropTypes.any,
+    title: PropTypes.string,
 };
+
+export default Section;
